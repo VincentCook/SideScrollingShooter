@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7585602F-1BE3-4E21-9DFA-418E6255DD16}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Mission1Earth</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shell14f\camera.cpp" />
+    <ClCompile Include="..\shell14f\entities.cpp" />
+    <ClCompile Include="..\shell14f\ErrorLogger.cpp" />
+    <ClCompile Include="..\shell14f\gamecode.cpp" />
+    <ClCompile Include="..\shell14f\GameObject.cpp" />
+    <ClCompile Include="..\shell14f\gametimer.cpp" />
+    <ClCompile Include="..\shell14f\KeyboardBuffer.cpp" />
+    <ClCompile Include="..\shell14f\mydrawengine.cpp" />
+    <ClCompile Include="..\shell14f\myinputs.cpp" />
+    <ClCompile Include="..\shell14f\mysoundengine.cpp" />
+    <ClCompile Include="..\shell14f\ObjectManager.cpp" />
+    <ClCompile Include="..\shell14f\Shapes.cpp" />
+    <ClCompile Include="..\shell14f\vector2D.cpp" />
+    <ClCompile Include="..\shell14f\wincode.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shell14f\camera.h" />
+    <ClInclude Include="..\shell14f\entities.h" />
+    <ClInclude Include="..\shell14f\ErrorLogger.h" />
+    <ClInclude Include="..\shell14f\errortype.h" />
+    <ClInclude Include="..\shell14f\event.h" />
+    <ClInclude Include="..\shell14f\gamecode.h" />
+    <ClInclude Include="..\shell14f\GameObject.h" />
+    <ClInclude Include="..\shell14f\GamepadClass.h" />
+    <ClInclude Include="..\shell14f\gametimer.h" />
+    <ClInclude Include="..\shell14f\KeyboardBuffer.h" />
+    <ClInclude Include="..\shell14f\mydrawengine.h" />
+    <ClInclude Include="..\shell14f\myinputs.h" />
+    <ClInclude Include="..\shell14f\mysoundengine.h" />
+    <ClInclude Include="..\shell14f\ObjectManager.h" />
+    <ClInclude Include="..\shell14f\objecttypes.h" />
+    <ClInclude Include="..\shell14f\Shapes.h" />
+    <ClInclude Include="..\shell14f\vector2D.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="brick.png" />
+    <Image Include="building1center.png" />
+    <Image Include="building1left.png" />
+    <Image Include="building1right.png" />
+    <Image Include="Explosion.png" />
+    <Image Include="explosion1.PNG" />
+    <Image Include="explosion10.png" />
+    <Image Include="explosion11.png" />
+    <Image Include="explosion12.png" />
+    <Image Include="explosion13.png" />
+    <Image Include="explosion14.png" />
+    <Image Include="explosion15.png" />
+    <Image Include="explosion16.png" />
+    <Image Include="explosion2.PNG" />
+    <Image Include="explosion3.PNG" />
+    <Image Include="explosion4.png" />
+    <Image Include="explosion5.png" />
+    <Image Include="explosion6.png" />
+    <Image Include="explosion7.png" />
+    <Image Include="explosion8.png" />
+    <Image Include="explosion9.png" />
+    <Image Include="Flames1.png" />
+    <Image Include="Flames2.png" />
+    <Image Include="FuelStation.png" />
+    <Image Include="FullAnim.png" />
+    <Image Include="Kamakaze.png" />
+    <Image Include="missile.png" />
+    <Image Include="MissionLogo.png" />
+    <Image Include="PlayershipNoTex.png" />
+    <Image Include="Raptor.png" />
+    <Image Include="Road.png" />
+    <Image Include="scratchedmetal.png" />
+    <Image Include="skyline.png" />
+    <Image Include="spitfire.png" />
+    <Image Include="TrumpTower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Explosionsound.wav" />
+    <Media Include="laser.wav" />
+    <Media Include="RocketThrust.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

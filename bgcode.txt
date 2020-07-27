@@ -1,0 +1,43 @@
+  //int nextXBackground = 0 ; //next X for tiling background
+  //int nextYBackground = 0 ; //next Y for tiling
+
+  //nextXBackground = MyDrawEngine::GetInstance() ->
+  //                  GetViewport().GetBottomLeft().XValue - 500 ;
+
+  //nextYBackground = MyDrawEngine::GetInstance() ->
+  //                  GetViewport().GetTopRight().YValue + 500 ; 
+
+
+  //MyDrawEngine::GetInstance() -> LoadPicture(L"scratchedmetal.PNG") ; 
+  ////load image for the background 
+
+  //while(nextYBackground >  MyDrawEngine::GetInstance() ->
+  //                                       GetViewport().GetBottomRight().YValue
+  //                                       - 500) 
+  ////from top to bottom of the screen 
+  //{
+
+  //  while(nextXBackground < MyDrawEngine::GetInstance() ->
+  //        GetViewport().GetBottomRight().XValue + 500)
+  //  //from left to right
+  //  {
+
+  //    MyDrawEngine::GetInstance() -> DrawAt(Vector2D(nextXBackground,
+  //                                                   nextYBackground),
+  //                                          MyDrawEngine::GetInstance() ->
+  //                                            FindPicture
+  //                                              (L"scratchedmetal.PNG")) ; 
+  //    //draw background image
+
+  //    nextXBackground = nextXBackground + BGDIMENSION ; 
+  //    //add the width for next image
+  //
+  //  }
+
+  //  nextYBackground = nextYBackground - BGDIMENSION ;
+  //  //take the height for next image
+  //  nextXBackground = MyDrawEngine::GetInstance() ->
+  //                  GetViewport().GetBottomLeft().XValue - 500 ;
+  //  //reset X value 
+
+  //}
